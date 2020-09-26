@@ -8,7 +8,7 @@
 }
 
 header {
-    background-image: url(img/ribs.jpg);
+    background-image: url(img/dark-ribs.jpg);
     background-repeat: no-repeat;
 }
 
@@ -17,13 +17,32 @@ header {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
 }
 
-.header-link {
-    text-decoration: none;
-    font-weight: 900;
-}
-
-a {
+a, .top {
     text-transform: uppercase;
+    color: #F18119;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.top {
+    letter-spacing: 1.5px;
+    font-size: 0.625rem;
+}
+
+.headline {
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+.footer {
+    font-size: 0.625rem;
+}
+
+h2 {
+    font-size: 1.3125rem;
 }
