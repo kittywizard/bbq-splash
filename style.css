@@ -14,6 +14,8 @@ header {
     padding: 0 .25em 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
 }
 
 main {
@@ -48,7 +50,7 @@ a, .top {
     color: #fff;
     font-weight: 400;
     font-size: 2.25rem;
-    margin: 2em 0;
+    margin: 0;
 }
 
 .footer {
@@ -60,7 +62,6 @@ h2 {
     font-size: 1.3125rem;
     margin: 0;
 }
-
 
 /* media query */
 
