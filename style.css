@@ -7,7 +7,8 @@
 }
 
 header {
-    background-image: url(img/dark-ribs.jpg);
+    background-image: url(img/ribs.jpg);
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     background-color: #404040;
@@ -44,6 +45,10 @@ a, .top {
     letter-spacing: 1.5px;
     font-size: 0.625rem;
     order: -1;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1; /* border slice. makes no sense. need the 1 for any border gradients though */
+    margin: 0;
+    padding-top: 3px;
 }
 
 .headline {
@@ -61,6 +66,55 @@ a, .top {
 h2 {
     font-size: 1.3125rem;
     margin: 0;
+}
+
+/* form */
+
+.email-collector {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+input,
+.btn {
+    width: 100%; /* forms have a default width! */
+    text-align: inherit;
+    font-family: inherit; /* forms don't inherit text properties! */ 
+    margin-bottom: .75em;
+    border-radius: 3px;
+}
+
+input {
+    color: #404040;
+    border: 1px solid #404040;
+    padding: .4em; 
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.07); 
+}
+
+.btn {
+    text-transform: uppercase;
+    display: inline-block;
+    border: unset;
+    padding: 1em 2em;
+    font-size: 0.625rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    transition: transform 250ms; /* first attribute is what we want to transition */ 
+    transform: scale(1);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
 }
 
 /* media query */
